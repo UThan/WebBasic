@@ -1,0 +1,57 @@
+
+1.  Untracked --> commit လုပ်ချင်ရင် staging area ထည်ရမည်
+
+2.  Commit --> edit  --> not_staged ရောက်မည် 
+    Not Staged  --> next commit လုပ်ချင်ရင် staging area ထည့်ရမည်
+
+3.  Not Staged  --> တန်းပြီး commit လုပ်ချင်ရင် --> git commit -a -m "comment" (note : new created file ဆိုရင်င် )
+
+4.  Commit လုပ်ပြီးသား file ကို delete လုပ်ရင် --> file က not_staged ထဲရောက်မယ် --> Staged ပြန်လုပ်ပေးရမယ်
+    git rm filename (note: commit လုပ်ပြီးသားfile only, edited->staged ဆိုရင် ဖျက်လို့မရပါ) 
+    git rm -f filename (force delete)
+
+5.  git diff --> (previous commit & changes( delete , edit) unstaged)
+    git diff --staged --> (previous commit & changes( delete , edit) staged)
+
+6.  git restore filename --> changes --> previous commit အခြေနေကိုပြန်သွားရင်သုံး
+    git restore --staged ---> staged --->  un_staged အခြေနေကိုပြန်သွားရင်သုံး
+
+7.  git rm --cached   ---> staged ---> un_tracked အခြေနေကိုပြန်သွားရင်သုံး
+
+8.  rename လုပ်ချင်ရင် git mv originalfilename newfilename
+                  
+			mv originalfilename newfilename
+			git rm orginalfile (..not require in later)
+			git add newfilename
+
+9. git ignore ---> .gitignore ထည့်ပေးရတယ်
+   file         \filename.extension
+   folder(dir)  foldername/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git rm --cached       ---> untracked file
+
+git restore --staged  ---> changes not staged
+
+file rename  ----> git original file delete , new file (untracked file)
+mv ori new
+new file ---> staging area 
+
+git mv ori new
