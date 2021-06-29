@@ -1,0 +1,22 @@
+git commit --amend -m "commit message"   --> undo commit 
+
+git log   commit အ‌ရေအတွက်ကြည့်ချင်ရင်သုံး
+
+git remote add remotename remoteurl  
+git remote remove remotname
+git remote show  
+git remote -v (fetch ,pull)
+
+git tag -a tagnameornumber -m "tag message"   annnoted tag
+git tag tagnameornumber                       lightweight tag
+
+git config --global alias.aliasname "command --attribute"
+
+git branch နှင့်ပတ်သတ်၍
+https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell တွင်၀င်ကြည့်ပါရန်
+git branch branchname
+git log --oneline --decorate --graph --all
+git checkout branchname
+git checkout commit_hash (9aesds)
+
+

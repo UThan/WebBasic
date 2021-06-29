@@ -4,7 +4,7 @@
 2.  Commit --> edit  --> not_staged ရောက်မည် 
     Not Staged  --> next commit လုပ်ချင်ရင် staging area ထည့်ရမည်
 
-3.  Not Staged  --> တန်းပြီး commit လုပ်ချင်ရင် --> git commit -a -m "comment" (note : new created file ဆိုရင်င် )
+3.  Not Staged  --> တန်းပြီး commit လုပ်ချင်ရင် --> git commit -a -m "comment" (note : new created file ဆိုရင်မရ )
 
 4.  Commit လုပ်ပြီးသား file ကို delete လုပ်ရင် --> file က not_staged ထဲရောက်မယ် --> Staged ပြန်လုပ်ပေးရမယ်
     git rm filename (note: commit လုပ်ပြီးသားfile only, edited->staged ဆိုရင် ဖျက်လို့မရပါ) 
